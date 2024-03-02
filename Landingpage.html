@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Aces of Safety</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+  <div class="Wrapper"> 
+    <div class="Navbar">
+      <div class="Navbar-left">
+        <ul> 
+          <img src="img/LOGO.jpg" alt="">
+          <li>
+            <a href="#hero-section">Home</a>
+          </li>
+          <li>
+            <a href="#description-section">About</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
+          <li>
+            <a href="#footer">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    
+      <div class="Navbar-right">
+        <ul>
+          <li>
+            <a class="signup" onclick="openModal('signup-modal')" id="Signup-btn">Sign up</a>
+          </li>
+    
+          <li>
+            <a class="login" onclick="openModal('login-modal')" id="Login-btn">Log In</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End of Navbar -->
+
+    <div class="hero-section" id="hero-section">
+      <div class="hero-left">
+        <h1 id="Header">One Man, One Standard:<br>
+          Introducing Aces of <br>
+          Safety, OPC</h1>
+        <p>We make safety our top priority</p>
+        <button class="btnBook">Book Now</button>
+        <button class="btnSee">See Our Work</button>
+      </div>
+    
+      <div class="hero-right"> 
+        <img draggable="false" load="lazy" src="img/Icon.png" alt="">
+      </div>
+    </div>
+    <!-- End of Hero Section -->
+
+    <div class="Description-section" id="description-section">
+      <div class="Description-left">
+        <img draggable="false" load="lazy" src="img/Icon 3.png" alt="">
+      </div>
+
+      <div class="Description-right">
+        <h1 class="Header2">The OPC you need is here</h1>
+        <p>lorem ipsum dolor sit amet. A dolorum nostrum rem aliquid consequatur</p>
+        <button class="btnCert">Certifications</button>
+
+        <div class="project-scroll"> 
+          <div class="scroll1">
+            <img draggable="false" load="lazy" src="img/Icon 3.png" alt="">
+          </div>
+      
+          <div class="scroll2">
+            <img draggable="false" load="lazy" src="img/Icon 3.png" alt="">
+          </div>
+      
+          <div class="scroll3">
+            <img draggable="false" load="lazy" src="img/Icon 3.png" alt="">
+          </div>
+      
+          <div class="scroll4">
+            <img draggable="false" load="lazy" src="img/Icon 3.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Description -->
+
+    <div class="Team">
+      <div class="Member1"> 
+        <img draggable="false" load="lazy" src="img/Abet.png" alt="">
+        <h1>Abner Tirona</h1>
+        <p>Safety Inspector/Owner</p>
+      </div>
+
+      <div class="Member2"> 
+        <img draggable="false" load="lazy" src="img/Abet.png" alt="">
+        <h1>Abner Tirona</h1>
+        <p>Safety Inspector/Owner</p>
+      </div>
+
+      <div class="Member3"> 
+        <img draggable="false" load="lazy" src="img/Abet.png" alt="">
+        <h1>Abner Tirona</h1>
+        <p>Safety Inspector/Owner</p>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div id="footer-left">
+        <div id="footer-logo-section">
+          <h1>Logo</h1>
+          <h2>Aces of Safety, OPC</h2>
+        </div>
+
+        <div id="footer-details">
+          <h5>Visit us At</h5>
+          <p>#29 3rd St. West Tapinac</p>
+          <p>Olongapo City, Zambales, 2200</p>
+
+          <h5>Call us At</h5>
+          <p>0956-563-4075</p>
+          <p>222-0885</p>
+
+          <div id="icons">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div id="footer-middle"></div>
+
+      <div id="footer-right">
+        <form method="post">
+          <h3>LET US HELP YOU! CONTACT US</h3>
+          <input type="text" placeholder="Enter your full name...">
+          <input type="text" placeholder="Enter inspection number...">
+          <input type="text" placeholder="Enter your email...">
+
+          <textarea placeholder="Enter your message..."></textarea>
+          <button>Send Message</button>
+        </form>
+      </div>
+
+      <div id="copyright">
+        <p>Copyright @2023. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+    <!-- MODAL SECTION 1 -->
+
+<div class="modal-overlay" id="login-modal">
+  <div class="modal">
+      <span class="close-btn" onclick="closeModal('login-modal')">×</span>
+      <h2>LOGO</h2>
+      <p>Aces of Safety, OPC</p>
+     
+
+      <form method="post">
+      <input type="text" id="exampleInput" name="exampleInput" placeholder="Username">
+      <input type="password" id="examplePasswordInput" name="examplePasswordInput" placeholder="password">   
+    </form>
+      <button>Login</button> 
+  </div>
+</div>
+
+ <!-- MODAL SECTION 2 -->
+<div class="modal-overlay" id="signup-modal">
+  <div class="modal">
+      <form method="post">
+      <span class="close-btn" onclick="closeModal('signup-modal')">×</span>
+      <h2>LOGO 2</h2>
+      <p>Aces of Safety, OPC</p>
+     
+
+      <input type="text" id="exampleInput" name="exampleInput" placeholder="Username">
+      <input type="password" id="examplePasswordInput" name="examplePasswordInput" placeholder="password">
+      </form>
+      <button>Signup</button>
+  </div>
+</div> 
+
+<!-- MODAL SECTION CERT -->
+<div class="modal-overlay" id="certificate-modal">
+  <div class="modal-cert">
+    <img src="img/CERT.JPG" alt="" height="450px" width="100%">
+    
+
+  </div>
+
+</div>
+
+<!-- JAVASCRIPT -->
+    <script>
+      var modal = ''
+
+      function openModal(id) {  
+          modal = document.getElementById(id);
+          modal.style.visibility = 'visible';
+          modal.style.opacity = 1;
+      }
+  
+      function closeModal(id) {
+          modal = document.getElementById(id);
+          modal.style.visibility = 'hidden';
+          modal.style.opacity = 0;
+      }
+      
+      window.addEventListener('click', (event) => {
+        if (event.target == modal){
+          closeModal('login-modal');
+          closeModal('signup-modal');
+        }
+      });
+
+
+  </script>
+</body>
+</html>
